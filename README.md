@@ -76,14 +76,14 @@ Uses **NetworkX** and **Matplotlib** for dynamic graph rendering.
 
 1. Clone the repository:
 git clone https://github.com/your-username/Graph-Search-Visualizer.git
-
+z
 2. Navigate to the project directory:
 cd "Graph Search Visualizer"
 
 3. Install required libraries:
 pip install networkx matplotlib
 
-4.Run the GUI application:
+4. Run the GUI application:
 python app.py
 
 
