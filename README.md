@@ -75,20 +75,29 @@ Uses **NetworkX** and **Matplotlib** for dynamic graph rendering.
 ## How to Run ▶️
 
 1. Clone the repository:
-git clone https://github.com/your-username/Graph-Search-Visualizer.git
-z
+```bash
+git clone https://github.com/Youssef-Tarek-2005/Informed-Uninformed-Search.git
+```
 2. Navigate to the project directory:
-cd "Graph Search Visualizer"
+```bash
+cd "Informed-Uninformed-Search"
+```
 
 3. Install required libraries:
+```bash
 pip install networkx matplotlib
+```
 
 4. Run the GUI application:
+```bash
 python app.py
+```
 
 
 ## Project Structure 📂
-Graph Search Visualizer/
+
+```
+Informed-Uninformed-Search/
 ├── app.py            # Main GUI application
 ├── bfs.py            # Breadth-First Search implementation
 ├── dfs.py            # Depth-First Search implementation
@@ -96,16 +105,20 @@ Graph Search Visualizer/
 ├── ucs.py            # Uniform Cost Search implementation
 ├── greedy.py         # Greedy Best-First Search implementation
 ├── astar.py          # A* Search implementation
+├── .gitignore        # Git ignore file
+└── README.md         # Project documentation
+```
 
 ## Purpose 🎯
 
 This project is designed for educational purposes to help understand and compare different graph search algorithms, including both uninformed and informed approaches, with a visual and interactive approach.
 
-Future Improvements 🔧
-Step-by-step animation controls
-Save and load graph configurations
-Performance comparison between algorithms
-Support for directed graphs
+## Future Improvements 🔧
+
+- Step-by-step animation controls
+- Save and load graph configurations
+- Performance comparison between algorithms
+- Support for directed graphs
 
 
 ## Author 👤
