@@ -108,7 +108,7 @@ Performance comparison between algorithms
 Support for directed graphs
 
 
-##Author 👤
+## Author 👤
 
 Youssef Tarek Mohamed
 
@@ -116,9 +116,3 @@ Youssef Tarek Mohamed
 
 This project is intended for educational purposes.
 
-
----
-
-If you want, I can **also create a ready-to-go `.gitignore`** and folder structure snippet for this project so you can push it to GitHub cleanly.  
-
-Do you want me to do that?
