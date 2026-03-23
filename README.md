@@ -1,85 +1,101 @@
-# Informed-Uninformed-Search
-This project is a complete Graph Searching System with an interactive GUI and visualization, designed to demonstrate and compare different search algorithms used in Artificial Intelligence.  The application allows users to build custom graphs, select a search strategy, and visually observe how the algorithm explores nodes to reach a target.
+Graph Search Visualizer (GUI-Based)
 
-# 🧠 Graph Search Visualizer (GUI-Based)
+This project is a complete Graph Searching System with a graphical user interface and visualization. It demonstrates the behavior of different search algorithms used in Artificial Intelligence by allowing users to construct graphs, execute search strategies, and observe the results visually.
 
-A complete **Graph Searching System with GUI and Visualization** that demonstrates how different AI search algorithms work on user-defined graphs.
+Features
+Supported Algorithms
+Uninformed Search
+Breadth-First Search (BFS)
+Depth-First Search (DFS)
+Iterative Deepening Search (IDS)
+Uniform Cost Search (UCS)
+Informed Search
+Greedy Best-First Search
+A* Search
+Graph Input
 
-This project allows users to construct graphs, choose search algorithms, and visualize the process of finding a path from a start node to a goal node.
+Users can define a custom graph using the following inputs:
 
----
+Graph Structure (Adjacency List)
 
-## 🚀 Features
+Each line represents a node and its neighbors:
+A:B,C,D
+B:E,F
+C:G,H
 
-### 🔍 Search Algorithms
+Node Costs (Weights)
 
-#### Uninformed Search
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Iterative Deepening Search (IDS)
-- Uniform Cost Search (UCS)
+Used for cost-based algorithms:
+A:10,B:5,C:7,D:3
 
-#### Informed Search
-- Greedy Best-First Search
-- A* Search
+Heuristic Values
 
----
+Used for informed search algorithms:
+A:10,B:8,C:6,D:7
 
-### 🧩 Graph Input
-- Add nodes and edges manually
-- Assign weights to edges
-- Input heuristic values (for informed search)
+GUI Functionality
+Selection of search algorithm
+Input fields for graph structure, node costs, and heuristics
+Entry of start and goal nodes
+Execution button to run the selected algorithm
+Step-by-step execution table displaying:
+Current node
+Explored nodes
+Frontier
+Additional algorithm-specific data (cost, heuristic, etc.)
+Output
+Displays the final path if found
+Shows total path cost with detailed breakdown
+Displays a message if no path exists
+Visualizes the graph with:
+Explored nodes highlighted
+Final path clearly marked
+Goal node emphasized
+Visualization
 
----
+The system uses NetworkX and Matplotlib to render the graph dynamically:
 
-### 📊 Visualization
-- Interactive graph display
-- Highlight explored nodes
-- Highlight final path from start to goal
+Default nodes are displayed in light blue
+Explored nodes are highlighted in orange
+Final path is highlighted in green
+Goal node is highlighted in red
+Technologies Used
+Python
+Tkinter (GUI)
+NetworkX (Graph representation)
+Matplotlib (Graph visualization)
+How to Run
+Clone the repository:
+git clone https://github.com/your-username/graph-search-visualizer.git
+Navigate to the project directory:
+cd graph-search-visualizer
+Install required libraries:
+pip install networkx matplotlib
+Run the application:
+python main.py
+Project Structure
 
----
+main.py
+bfs.py
+dfs.py
+ids.py
+ucs.py
+greedy.py
+astar.py
 
-### 📍 Output
-- Displays the found path
-- Shows total path cost
-- Shows message if no path exists
+Purpose
 
----
+This project is intended for educational use to help understand and compare different graph search algorithms, including both uninformed and informed approaches. It provides a visual and interactive way to study how these algorithms explore graphs and determine optimal paths.
 
-## 🖥️ GUI Overview
+Future Improvements
+Step-by-step animation controls
+Save and load graph configurations
+Performance comparison between algorithms
+Support for directed graphs
+Author
 
-The graphical interface allows users to:
-- Select a search algorithm
-- Enter nodes and edges
-- Define weights and heuristics
-- Choose start and goal nodes
-- Run and visualize the search
+Your Name
 
----
+License
 
-## ⚙️ How It Works
-
-1. The user inputs the graph (nodes, edges, weights).
-2. Selects a search algorithm.
-3. If using informed search, heuristic values are provided.
-4. The system runs the algorithm and:
-   - Finds the path (if it exists)
-   - Calculates total cost
-   - Displays a visual representation of the search process
-
----
-
-## 🛠️ Technologies Used
-
-- **Python**
-- **Tkinter / PyQt** (for GUI)
-- **NetworkX** (graph handling)
-- **Matplotlib** (visualization)
-
----
-
-## ▶️ How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/graph-search-visualizer.git
+This project is intended for educational purposes.
